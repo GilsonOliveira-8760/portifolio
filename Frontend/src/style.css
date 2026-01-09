@@ -492,3 +492,61 @@ nav a.active::after {
 }
 
 /* Footer */
+footer {
+    width: 100vw;
+    background: var(--primary-navy);
+    padding: 80px 120px 40px;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.footer-brand h3 {
+    font-family: 'MiSans-Bold';
+    font-size: 24px;
+    color: var(--bg-white);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-brand p {
+    color: var(--bg-white);
+    max-width: 300px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+}
+
+.link-column h4 {
+    font-family: 'AlibabaSans-Medium';
+    color: var(--bg-white);
+    font-size: 16px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.link-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.link-column a {
+    color: var(--bg-white);
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.link-column a:hover {
+    color: var(--accent-cyan);
+}
