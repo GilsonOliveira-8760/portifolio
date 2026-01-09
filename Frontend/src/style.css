@@ -368,3 +368,50 @@ nav a.active::after {
 }
 
 /* About Section */
+.about {
+    width: 1920px;
+    padding: 120px 120px;
+    background: var(--bg-light);
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-heading {
+    font-family: 'MiSans-Bold';
+    font-size: 38px;
+    color: var(--primary-navy);
+    margin-bottom: 32px;
+    line-height: 1.2;
+}
+
+.about-desc {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+
+.about-img {
+    flex: 1;
+}
+
+.about-img img {
+    width: 500px;
+    aspect-ratio: 1 / 1; /* Força ser quadrado indepedente da imagem original */
+    border-radius: 50%;
+    object-fit: cover;    /* Centraliza e corta o excesso */
+    object-position: top; /* mode a moldura para o topo */
+}
+
+.about-img img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border: solid 3px var(--accent-cyan);
+}
+
+/* Contact Section */
