@@ -415,3 +415,80 @@ nav a.active::after {
 }
 
 /* Contact Section */
+.contact {
+    width: 100vw;
+    padding: 120px 120px;
+    background: var(--bg-white);
+    position: relative;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #F8FAFC;
+    border-radius: 32px;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: 1fr; /* talvez adicionar "1fr" quando colocar o formulario */
+    gap: 80px;
+    overflow: hidden;
+}
+
+.contact-info h2 {
+    font-family: 'MiSans-Bold';
+    font-size: 42px;
+    color: var(--primary-navy);
+    margin-bottom: 24px;
+}
+
+.contact-info p {
+    color: var(--text-muted);
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.method {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.method-icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--accent-cyan);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.ri-mail-send-line:before {
+    content: "\2709";
+}
+
+.ri-map-pin-line:before {
+    content: "\2691";
+}
+
+.method-text h4 {
+    font-family: 'MiSans-Bold';
+    color: var(--primary-navy);
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.method-text span {
+    color: var(--text-muted);
+}
+
+/* Footer */
