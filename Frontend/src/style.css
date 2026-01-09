@@ -123,3 +123,117 @@ nav a.active::after {
 }
 
 /* Home Section */
+
+.home {
+    height: 745px;
+    width: 100vw;
+    padding-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.home-content {
+    text-align: center;
+    max-width: 900px;
+    z-index: 2;
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(6, 182, 212, 0.1);
+    color: var(--primary-navy);
+    border-radius: 30px;
+    font-family: 'AlibabaSans-Medium';
+    font-size: 14px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.home h1 {
+    font-family: 'MiSans-Bold';
+    font-size: 60px;
+    line-height: 1.1;
+    color: var(--primary-navy);
+    margin-bottom: 32px;
+}
+
+.home h1 span {
+    color: var(--accent-cyan);
+    position: relative;
+    display: inline-block;
+}
+        
+.home h1 span::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: rgba(6, 182, 212, 0.2);
+    z-index: -1;
+    transform: skewX(-10deg);
+}
+
+.home p {
+    font-size: 20px;
+    color: var(--text-muted);
+    margin-bottom: 48px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-primary {
+    padding: 16px 40px;
+    background: var(--primary-navy);
+    color: white;
+    border: none;
+    font-family: 'MiSans-Bold';
+    font-size: 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    box-shadow: 0 10px 20px -5px rgba(15, 23, 42, 0.2);
+}
+
+.btn-primary:hover {
+    background: var(--accent-cyan);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgba(6, 182, 212, 0.3);
+}
+
+.btn-outline {
+    padding: 16px 40px;
+    background: transparent;
+    border: 2px solid var(--primary-navy);
+    color: var(--primary-navy);
+    font-family: 'MiSans-Bold';
+    font-size: 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background: white;
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+/* Projects Section */
