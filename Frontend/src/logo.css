@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'AlibabaSans-Bold';
+    src: url('https://assets-persist.lovart.ai/agent-static-assets/AlibabaSans-Bold.otf') format('opentype');
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    color: #1a2332;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-g {
+    font-family: 'AlibabaSans-Bold';
+    font-size: 40px;
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    color: inherit;
+}
+
+.mini-o {
+    font-family: 'AlibabaSans-Bold';
+    font-size: 40px;
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    color: inherit;
+    opacity: 0.8;
+}
+
+/* Variante Dark */
+.logo-v-dark {
+    border: 3px solid #009cb8;
+}
+
+.logo-v-dark .mini-g {
+    color: white;
+}
+
+.logo-v-dark .mini-o {
+    color: #009cb8;
+}
+
+/* Variante Light */
+.logo-v-light {
+    border: 3px solid #1a2332;
+}
+
+.logo-v-light .mini-g {
+    color: #1a2332;
+}
+
+.logo-v-light .mini-o {
+    color: #009cb8;
+}
+
+
+/* Variant Monoline, incompleta */
+.logo-v-monoline {
+    border: 3px solid white;
+}
+
+.logo-v-monoline .mini-o, .logo-v-monoline .mini-g {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
