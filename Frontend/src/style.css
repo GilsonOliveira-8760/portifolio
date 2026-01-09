@@ -1,0 +1,125 @@
+/* Font Definitions */
+@font-face {
+    font-family: 'MiSans-Regular';
+    src: url('https://assets-persist.lovart.ai/agent-static-assets/MiSans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MiSans-Bold';
+    src: url('https://assets-persist.lovart.ai/agent-static-assets/MiSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AlibabaSans-Medium';
+    src: url('https://assets-persist.lovart.ai/agent-static-assets/AlibabaSans-Medium.otf') format('opentype');
+}
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    max-width: 100vw;
+    font-family: 'MiSans-Regular', sans-serif;
+    background-color: #FFFFFF;
+    color: #1A202C;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Color Variables */
+:root {
+    --primary-navy: #0F172A;
+    --accent-cyan: #06B6D4;
+    --bg-light: #F8FAFC;
+    --bg-white: #FFFFFF;
+    --text-main: #3b1e1e;
+    --text-muted: #64748B;
+    --border-color: #E2E8F0;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+
+.logo-text {
+    font-family: 'MiSans-Bold';
+    font-size: 24px;
+    color: var(--primary-navy);
+    letter-spacing: -0.5px;
+}
+
+nav ul {
+    display: flex;
+    gap: 36%;
+}
+
+nav a {
+    font-family: 'AlibabaSans-Medium';
+    font-size: 16px;
+    color: var(--text-main);
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav a:hover {
+    color: var(--accent-cyan);
+}
+
+nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--accent-cyan);
+}
+
+.headerButton {
+    padding: 12px 28px;
+    background: var(--primary-navy);
+    border: none;
+    color: white;
+    border-radius: 50px;
+    font-family: 'AlibabaSans-Medium';
+    font-size: 15px;
+    transition: transform 0.2s;
+}
+        
+.headerButton:hover {
+    transform: translateY(-2px);
+    background: var(--accent-cyan);
+    color: var(--primary-navy);
+}
+
+/* Home Section */
