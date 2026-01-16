@@ -502,7 +502,7 @@ nav a.active::after {
 footer {
     width: 100vw;
     background: var(--primary-navy);
-    padding: 80px 120px 40px;
+    padding: 80px 8% 40px;
     border-top: 1px solid var(--border-color);
 }
 
@@ -526,6 +526,7 @@ footer {
 .footer-brand p {
     color: var(--bg-white);
     max-width: 300px;
+    padding: 0 0 0 45px;
 }
 
 .footer-links {
