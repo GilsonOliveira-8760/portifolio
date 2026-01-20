@@ -19,6 +19,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     width: 100vw;
     max-width: 100vw;
@@ -27,6 +31,8 @@ body {
     color: #1A202C;
     overflow-x: hidden;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -126,6 +132,11 @@ nav a.active::after {
     transform: translateY(-2px);
     background: var(--accent-cyan);
     color: var(--primary-navy);
+}
+
+/* main */
+main {
+    flex: 1;
 }
 
 /* Home Section */
@@ -500,6 +511,7 @@ nav a.active::after {
 
 /* Footer */
 footer {
+    position: static;
     width: 100vw;
     background: var(--primary-navy);
     padding: 80px 8% 40px;
