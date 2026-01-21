@@ -136,6 +136,7 @@ nav a.active::after {
 
 /* main */
 main {
+    margin-top: 90px;
     flex: 1;
 }
 
