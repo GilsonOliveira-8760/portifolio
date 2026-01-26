@@ -141,11 +141,10 @@ main {
 }
 
 /* Home Section */
-
 .home {
     height: 745px;
     width: 100vw;
-    padding-top: 90px;
+    padding-bottom: 55px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,6 +1,5 @@
 export function Home() {
     return `
-    // aqui vai o codigo html
     <section id="home" class="home">
         <div class="shape-circle shape-1"></div>
         <div class="shape-circle shape-2"></div>
